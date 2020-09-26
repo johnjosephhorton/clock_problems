@@ -13,7 +13,7 @@ theme_set(theme_void())
 
 makeClocks <- function(N = 1) {
     hours <- sample(1:12, N, TRUE)
-    minutes <- sample(seq(0, 60, 5), N, TRUE)
+    minutes <- sample(seq(0, 55, 5), N, TRUE)
     
     AngleHour <- function(H, M) -2*pi * (H-3 + M/60)/12
     AngleMin  <- function(M)  -2*pi *  (M-15)/60
